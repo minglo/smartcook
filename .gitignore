@@ -31,3 +31,11 @@ DerivedData
 # Carthage/Checkouts
 
 Carthage/Build
+
+# Exclude temp nibs and swap files
+# 排除nib临时文件和交换文件
+*~.nib
+*.swp
+
+# 排除OS X的文件夹显示属性目录
+.DS_Store

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="muW-My-T5g">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SearchViewController" customModule="Smart_Cook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7QR-ts-SlW"/>
+                        <viewControllerLayoutGuide type="bottom" id="AoR-Ff-PCB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="NAP-ez-TAh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NAP-ez-TAh" secondAttribute="bottom" id="3SP-sO-fmq"/>
+                            <constraint firstItem="NAP-ez-TAh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="WKT-rv-W1t"/>
+                            <constraint firstAttribute="trailing" secondItem="NAP-ez-TAh" secondAttribute="trailing" id="bVV-yp-BXg"/>
+                            <constraint firstItem="NAP-ez-TAh" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="dQc-61-TNo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="288"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="96Q-z9-Lod">
+            <objects>
+                <viewController id="58y-cu-myE" customClass="ViewController" customModule="Smart_Cook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QeK-4h-HaO"/>
+                        <viewControllerLayoutGuide type="bottom" id="pSZ-ut-11A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sXn-Un-z2M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result" translatesAutoresizingMaskIntoConstraints="NO" id="KBF-Cd-jyx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIb-Us-0NP">
+                                <rect key="frame" x="115" y="518" width="91" height="30"/>
+                                <state key="normal" title="Search Again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzl-nI-frI">
+                                <rect key="frame" x="262" y="503" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KBF-Cd-jyx" firstAttribute="top" secondItem="sXn-Un-z2M" secondAttribute="top" id="C2d-UB-fqg"/>
+                            <constraint firstAttribute="trailing" secondItem="KBF-Cd-jyx" secondAttribute="trailing" id="LEz-9J-LLA"/>
+                            <constraint firstItem="KBF-Cd-jyx" firstAttribute="leading" secondItem="sXn-Un-z2M" secondAttribute="leading" id="ilC-3p-l7r"/>
+                            <constraint firstAttribute="bottom" secondItem="KBF-Cd-jyx" secondAttribute="bottom" id="xo6-dv-R0D"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXn-3Y-uAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="288"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TZ9-50-6gK">
+            <objects>
+                <viewController id="hQa-9K-Ofu" customClass="ViewController" customModule="Smart_Cook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mu0-he-IHs"/>
+                        <viewControllerLayoutGuide type="bottom" id="m2d-Cb-Xj5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tNE-ZH-YVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe-splash" translatesAutoresizingMaskIntoConstraints="NO" id="qoh-E9-DPr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qoh-E9-DPr" secondAttribute="trailing" id="0qu-dC-0Xd"/>
+                            <constraint firstItem="qoh-E9-DPr" firstAttribute="leading" secondItem="tNE-ZH-YVQ" secondAttribute="leading" id="GaI-oV-bTm"/>
+                            <constraint firstAttribute="bottom" secondItem="qoh-E9-DPr" secondAttribute="bottom" id="cE5-wt-ZXH"/>
+                            <constraint firstItem="qoh-E9-DPr" firstAttribute="top" secondItem="tNE-ZH-YVQ" secondAttribute="top" id="jDD-cm-1g5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chE-5h-X94" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="288"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RHX-ty-EAP">
+            <objects>
+                <viewController id="rye-NZ-wxE" customClass="ViewController" customModule="Smart_Cook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mej-x1-ope"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qb3-tf-UFN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MkR-5R-NNA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe" translatesAutoresizingMaskIntoConstraints="NO" id="HWK-Gm-YpR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HWK-Gm-YpR" secondAttribute="trailing" id="WMl-1Q-RQv"/>
+                            <constraint firstAttribute="bottom" secondItem="HWK-Gm-YpR" secondAttribute="bottom" id="dKf-a0-fIf"/>
+                            <constraint firstItem="HWK-Gm-YpR" firstAttribute="leading" secondItem="MkR-5R-NNA" secondAttribute="leading" id="efE-7p-3DO"/>
+                            <constraint firstItem="HWK-Gm-YpR" firstAttribute="top" secondItem="MkR-5R-NNA" secondAttribute="top" id="ifS-xT-oqj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AaX-u5-WA8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2194" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="33e-e0-WID">
+            <objects>
+                <viewController id="N2I-HJ-cBy" customClass="ViewController" customModule="Smart_Cook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OGU-wW-9dE"/>
+                        <viewControllerLayoutGuide type="bottom" id="H56-m3-HdT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HE8-ci-Kcx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooking-tips" translatesAutoresizingMaskIntoConstraints="NO" id="gYJ-1t-69T">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gYJ-1t-69T" secondAttribute="trailing" id="4AM-yF-ehN"/>
+                            <constraint firstAttribute="bottom" secondItem="gYJ-1t-69T" secondAttribute="bottom" id="WPz-4O-SNn"/>
+                            <constraint firstItem="gYJ-1t-69T" firstAttribute="top" secondItem="HE8-ci-Kcx" secondAttribute="top" id="lHb-Gp-gpT"/>
+                            <constraint firstItem="gYJ-1t-69T" firstAttribute="leading" secondItem="HE8-ci-Kcx" secondAttribute="leading" id="qQY-eH-L5P"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAP-5i-HeV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2558" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IkP-kA-my4">
+            <objects>
+                <viewController id="X5I-A9-1lE" customClass="ViewController" customModule="Smart_Cook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Aqq-dC-Tef"/>
+                        <viewControllerLayoutGuide type="bottom" id="JDe-a8-KrL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wWR-ce-glk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preparing-splash" translatesAutoresizingMaskIntoConstraints="NO" id="yhQ-FX-q0m">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="yhQ-FX-q0m" secondAttribute="bottom" id="2dL-v3-USc"/>
+                            <constraint firstAttribute="trailing" secondItem="yhQ-FX-q0m" secondAttribute="trailing" id="MpY-W6-l2u"/>
+                            <constraint firstItem="yhQ-FX-q0m" firstAttribute="leading" secondItem="wWR-ce-glk" secondAttribute="leading" id="Rzr-9b-loa"/>
+                            <constraint firstItem="yhQ-FX-q0m" firstAttribute="top" secondItem="wWR-ce-glk" secondAttribute="top" id="ymq-lQ-WCA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEd-5C-6b6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2934" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6C5-dY-Oga">
+            <objects>
+                <viewController id="joA-VN-7DH" customClass="ViewController" customModule="Smart_Cook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jhn-Oy-qWb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ltu-yk-1XB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Fb-g8-VdQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooking-details" translatesAutoresizingMaskIntoConstraints="NO" id="JGl-oO-Eui">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JGl-oO-Eui" secondAttribute="trailing" id="2BV-sA-Kdf"/>
+                            <constraint firstItem="JGl-oO-Eui" firstAttribute="leading" secondItem="6Fb-g8-VdQ" secondAttribute="leading" id="5ZS-0T-VKf"/>
+                            <constraint firstItem="JGl-oO-Eui" firstAttribute="top" secondItem="6Fb-g8-VdQ" secondAttribute="top" id="Ery-Wr-P1f"/>
+                            <constraint firstAttribute="bottom" secondItem="JGl-oO-Eui" secondAttribute="bottom" id="Xbe-6M-fyr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1n8-rA-Zxm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3308" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="giU-Zc-Lg7">
+            <objects>
+                <viewController id="C4T-Vo-BCJ" customClass="ViewController" customModule="Smart_Cook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8sH-H1-A5l"/>
+                        <viewControllerLayoutGuide type="bottom" id="46T-nE-QzJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jso-AQ-SL1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finish" translatesAutoresizingMaskIntoConstraints="NO" id="eOh-8R-Aeu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eOh-8R-Aeu" firstAttribute="leading" secondItem="Jso-AQ-SL1" secondAttribute="leading" id="ImS-Ap-buJ"/>
+                            <constraint firstAttribute="bottom" secondItem="eOh-8R-Aeu" secondAttribute="bottom" id="P6t-OY-C0p"/>
+                            <constraint firstItem="eOh-8R-Aeu" firstAttribute="top" secondItem="Jso-AQ-SL1" secondAttribute="top" id="SCL-wF-5lP"/>
+                            <constraint firstAttribute="trailing" secondItem="eOh-8R-Aeu" secondAttribute="trailing" id="mQw-H8-7G1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0f-81-IQ1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3652" y="-27"/>
+        </scene>
+        <!--Touch Control-->
+        <scene sceneID="04Z-pL-37t">
+            <objects>
+                <viewController id="w92-6r-hIL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cwt-Rh-0qT"/>
+                        <viewControllerLayoutGuide type="bottom" id="LAa-lT-8Oh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="an9-6a-sgM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="touch-control" translatesAutoresizingMaskIntoConstraints="NO" id="0A7-Qp-coK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Touch Control" id="HiK-5j-ZvU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9i-Ja-snc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="603"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="ALd-WU-uwP">
+            <objects>
+                <tableViewController id="34x-yr-wcn" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XY3-vt-P8B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NwP-YF-Yet">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NwP-YF-Yet" id="Njq-QP-l9a">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="34x-yr-wcn" id="xyk-sy-GnL"/>
+                            <outlet property="delegate" destination="34x-yr-wcn" id="11J-61-XWQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6DU-Gu-SJI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5j-ch-Mel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2362" y="-663"/>
+        </scene>
+        <!--Automatic-->
+        <scene sceneID="qU9-71-AqP">
+            <objects>
+                <viewController id="VMR-zB-zqP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gLf-jK-sdk"/>
+                        <viewControllerLayoutGuide type="bottom" id="S3k-ow-nA9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mo3-eh-7qN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="recipe-list" translatesAutoresizingMaskIntoConstraints="NO" id="dzl-S8-csh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Automatic" id="mqu-6a-mfa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phe-bK-rKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="-27"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="57r-cc-suj">
+            <objects>
+                <tabBarController id="muW-My-T5g" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="zXf-FO-Jcs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tzC-gx-ghs" kind="relationship" relationship="viewControllers" id="9Ti-BE-AHM"/>
+                        <segue destination="w92-6r-hIL" kind="relationship" relationship="viewControllers" id="aZt-XU-BGg"/>
+                        <segue destination="VMR-zB-zqP" kind="relationship" relationship="viewControllers" id="LNe-vM-tw0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRI-oB-J6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="289"/>
+        </scene>
+        <!--Recipe-->
+        <scene sceneID="hxw-Tf-Uri">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tzC-gx-ghs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recipe" id="JHd-NW-JMM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rQJ-o8-FFs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="34x-yr-wcn" kind="relationship" relationship="rootViewController" id="1mS-RP-CAf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ch-r2-adl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="-663"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cooking-details" width="375" height="667"/>
+        <image name="cooking-tips" width="375" height="667"/>
+        <image name="finish" width="375" height="667"/>
+        <image name="preparing-splash" width="375" height="667"/>
+        <image name="recipe" width="375" height="667"/>
+        <image name="recipe-list" width="375" height="667"/>
+        <image name="recipe-splash" width="375" height="667"/>
+        <image name="result" width="375" height="667"/>
+        <image name="search" width="375" height="667"/>
+        <image name="touch-control" width="375" height="667"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
