@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9690DEB71B19A56C0010F736 /* SCSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9690DEB61B19A56C0010F736 /* SCSearchViewController.swift */; };
+		9690DEB91B19AB830010F736 /* SCSearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9690DEB81B19AB830010F736 /* SCSearchingViewController.swift */; };
+		9690DEBB1B19B6060010F736 /* SCSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9690DEBA1B19B6060010F736 /* SCSplashViewController.swift */; };
+		9690DEBD1B19C4470010F736 /* SCCookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9690DEBC1B19C4470010F736 /* SCCookViewController.swift */; };
+		9690DEBF1B19CC030010F736 /* SCAutoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9690DEBE1B19CC030010F736 /* SCAutoMenuViewController.swift */; };
 		9691CEDD1AFC3E3A00CEE3DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9691CEDC1AFC3E3A00CEE3DC /* Images.xcassets */; };
 		96ABEC431AD5931A00434D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ABEC421AD5931900434D52 /* AppDelegate.swift */; };
 		96ABEC451AD5931A00434D52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ABEC441AD5931A00434D52 /* ViewController.swift */; };
 		96ABEC481AD5931A00434D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96ABEC461AD5931A00434D52 /* Main.storyboard */; };
 		96ABEC591AD5931A00434D52 /* Smart_CookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ABEC581AD5931A00434D52 /* Smart_CookTests.swift */; };
-		96ABEC631AD59D9400434D52 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ABEC621AD59D9400434D52 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9690DEB61B19A56C0010F736 /* SCSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSearchViewController.swift; sourceTree = "<group>"; };
+		9690DEB81B19AB830010F736 /* SCSearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSearchingViewController.swift; sourceTree = "<group>"; };
+		9690DEBA1B19B6060010F736 /* SCSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSplashViewController.swift; sourceTree = "<group>"; };
+		9690DEBC1B19C4470010F736 /* SCCookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCookViewController.swift; sourceTree = "<group>"; };
+		9690DEBE1B19CC030010F736 /* SCAutoMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCAutoMenuViewController.swift; sourceTree = "<group>"; };
 		9691CEDC1AFC3E3A00CEE3DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96ABEC3D1AD5931900434D52 /* Smart Cook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Cook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96ABEC411AD5931900434D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,7 +44,6 @@
 		96ABEC521AD5931A00434D52 /* Smart CookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart CookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96ABEC571AD5931A00434D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96ABEC581AD5931A00434D52 /* Smart_CookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_CookTests.swift; sourceTree = "<group>"; };
-		96ABEC621AD59D9400434D52 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,16 @@
 		96ABEC3F1AD5931900434D52 /* Smart Cook */ = {
 			isa = PBXGroup;
 			children = (
+				96ABEC401AD5931900434D52 /* Supporting Files */,
 				9691CEDC1AFC3E3A00CEE3DC /* Images.xcassets */,
 				96ABEC421AD5931900434D52 /* AppDelegate.swift */,
 				96ABEC441AD5931A00434D52 /* ViewController.swift */,
 				96ABEC461AD5931A00434D52 /* Main.storyboard */,
-				96ABEC621AD59D9400434D52 /* SearchViewController.swift */,
-				96ABEC401AD5931900434D52 /* Supporting Files */,
+				9690DEB81B19AB830010F736 /* SCSearchingViewController.swift */,
+				9690DEB61B19A56C0010F736 /* SCSearchViewController.swift */,
+				9690DEBA1B19B6060010F736 /* SCSplashViewController.swift */,
+				9690DEBC1B19C4470010F736 /* SCCookViewController.swift */,
+				9690DEBE1B19CC030010F736 /* SCAutoMenuViewController.swift */,
 			);
 			path = "Smart Cook";
 			sourceTree = "<group>";
@@ -161,6 +173,7 @@
 				TargetAttributes = {
 					96ABEC3C1AD5931900434D52 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 7R5SZFPNSE;
 					};
 					96ABEC511AD5931A00434D52 = {
 						CreatedOnToolsVersion = 6.2;
@@ -211,9 +224,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96ABEC631AD59D9400434D52 /* SearchViewController.swift in Sources */,
+				9690DEBF1B19CC030010F736 /* SCAutoMenuViewController.swift in Sources */,
 				96ABEC451AD5931A00434D52 /* ViewController.swift in Sources */,
+				9690DEB71B19A56C0010F736 /* SCSearchViewController.swift in Sources */,
+				9690DEBB1B19B6060010F736 /* SCSplashViewController.swift in Sources */,
 				96ABEC431AD5931A00434D52 /* AppDelegate.swift in Sources */,
+				9690DEBD1B19C4470010F736 /* SCCookViewController.swift in Sources */,
+				9690DEB91B19AB830010F736 /* SCSearchingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
