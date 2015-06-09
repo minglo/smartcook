@@ -16,12 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        var alertView = UIAlertView()
-        alertView.delegate = self
-        alertView.title = "出错"
-        alertView.message = "出错信息"
-        alertView.addButtonWithTitle("好的")
-        alertView.show()
+//        InstallUncaughtExceptionHandler { (ex:NSException!) -> Void in
+//            UIAlertView(title: "blahblah", message: ex.userInfo?.description, delegate: nil, cancelButtonTitle: "Cancel").show()
+//        }
         
         return true
     }
