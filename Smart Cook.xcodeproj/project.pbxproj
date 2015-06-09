@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965DB4911B26F3540042B8B3 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 965DB4901B26F3540042B8B3 /* UncaughtExceptionHandler.m */; };
+		965E21E61B25EF090079DED3 /* SCTouchControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965E21E51B25EF090079DED3 /* SCTouchControlViewController.swift */; };
 		9690DEB71B19A56C0010F736 /* SCSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9690DEB61B19A56C0010F736 /* SCSearchViewController.swift */; };
 		9690DEB91B19AB830010F736 /* SCSearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9690DEB81B19AB830010F736 /* SCSearchingViewController.swift */; };
 		9690DEBB1B19B6060010F736 /* SCSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9690DEBA1B19B6060010F736 /* SCSplashViewController.swift */; };
@@ -30,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		965DB48E1B26F3470042B8B3 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		965DB48F1B26F3530042B8B3 /* Smart Cook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smart Cook-Bridging-Header.h"; sourceTree = "<group>"; };
+		965DB4901B26F3540042B8B3 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		965E21E51B25EF090079DED3 /* SCTouchControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCTouchControlViewController.swift; sourceTree = "<group>"; };
 		9690DEB61B19A56C0010F736 /* SCSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSearchViewController.swift; sourceTree = "<group>"; };
 		9690DEB81B19AB830010F736 /* SCSearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSearchingViewController.swift; sourceTree = "<group>"; };
 		9690DEBA1B19B6060010F736 /* SCSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSplashViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 			children = (
 				96ABEC401AD5931900434D52 /* Supporting Files */,
 				9691CEDC1AFC3E3A00CEE3DC /* Images.xcassets */,
+				965DB48E1B26F3470042B8B3 /* UncaughtExceptionHandler.h */,
+				965DB4901B26F3540042B8B3 /* UncaughtExceptionHandler.m */,
 				96ABEC421AD5931900434D52 /* AppDelegate.swift */,
 				96ABEC441AD5931A00434D52 /* ViewController.swift */,
 				96ABEC461AD5931A00434D52 /* Main.storyboard */,
@@ -95,6 +103,8 @@
 				9690DEBA1B19B6060010F736 /* SCSplashViewController.swift */,
 				9690DEBC1B19C4470010F736 /* SCCookViewController.swift */,
 				9690DEBE1B19CC030010F736 /* SCAutoMenuViewController.swift */,
+				965E21E51B25EF090079DED3 /* SCTouchControlViewController.swift */,
+				965DB48F1B26F3530042B8B3 /* Smart Cook-Bridging-Header.h */,
 			);
 			path = "Smart Cook";
 			sourceTree = "<group>";
@@ -226,10 +236,12 @@
 			files = (
 				9690DEBF1B19CC030010F736 /* SCAutoMenuViewController.swift in Sources */,
 				96ABEC451AD5931A00434D52 /* ViewController.swift in Sources */,
+				965DB4911B26F3540042B8B3 /* UncaughtExceptionHandler.m in Sources */,
 				9690DEB71B19A56C0010F736 /* SCSearchViewController.swift in Sources */,
 				9690DEBB1B19B6060010F736 /* SCSplashViewController.swift in Sources */,
 				96ABEC431AD5931A00434D52 /* AppDelegate.swift in Sources */,
 				9690DEBD1B19C4470010F736 /* SCCookViewController.swift in Sources */,
+				965E21E61B25EF090079DED3 /* SCTouchControlViewController.swift in Sources */,
 				9690DEB91B19AB830010F736 /* SCSearchingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +293,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -323,6 +336,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -344,22 +358,33 @@
 		96ABEC5D1AD5931A00434D52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Smart Cook/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smart Cook/Smart Cook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		96ABEC5E1AD5931A00434D52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Smart Cook/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smart Cook/Smart Cook-Bridging-Header.h";
 			};
 			name = Release;
 		};
